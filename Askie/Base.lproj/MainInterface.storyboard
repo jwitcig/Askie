@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11129.15" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ObA-dk-sSI">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11103.10"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Messages View Controller-->
+        <scene sceneID="7MM-of-jgj">
+            <objects>
+                <viewController id="ObA-dk-sSI" customClass="MessagesViewController" customModule="Askie" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qkL-Od-lgU"/>
+                        <viewControllerLayoutGuide type="bottom" id="n38-gi-rB5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zMn-AG-sqS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="528"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4sM-Gs-3XI">
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nAh-yW-WFx">
+                                <state key="normal" title="start"/>
+                                <connections>
+                                    <action selector="startRecording" destination="ObA-dk-sSI" eventType="touchUpInside" id="FxR-pz-1jK"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cEU-OF-YTs" customClass="DrawerView" customModule="Askie" customModuleProvider="target">
+                                <subviews>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="kcH-AV-vY8">
+                                        <color key="backgroundColor" red="0.88133285979999998" green="0.88133285979999998" blue="0.88133285979999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="200" id="56m-3D-Jdy"/>
+                                            <constraint firstAttribute="height" constant="200" id="m0q-Wa-qRg"/>
+                                        </constraints>
+                                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Ekq-SV-USy">
+                                            <size key="itemSize" width="100" height="100"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells>
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="EmojiCell" id="h97-gN-vG4" customClass="EmojiCollectionViewCell" customModule="Askie" customModuleProvider="target">
+                                                <frame key="frameInset" minX="0.0%" minY="0.0%" width="100" height="100"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                                    <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Emoji" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RN0-I6-esq" customClass="EmojiLabel" customModule="Askie" customModuleProvider="target">
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </view>
+                                                <constraints>
+                                                    <constraint firstItem="RN0-I6-esq" firstAttribute="leading" secondItem="h97-gN-vG4" secondAttribute="leading" id="Hwb-Yc-ULq"/>
+                                                    <constraint firstItem="RN0-I6-esq" firstAttribute="top" secondItem="h97-gN-vG4" secondAttribute="top" id="cDj-2z-zKm"/>
+                                                    <constraint firstAttribute="trailing" secondItem="RN0-I6-esq" secondAttribute="trailing" id="cPq-Ix-syO"/>
+                                                    <constraint firstAttribute="bottom" secondItem="RN0-I6-esq" secondAttribute="bottom" id="k6A-40-5bg"/>
+                                                </constraints>
+                                                <connections>
+                                                    <outlet property="emojiLabel" destination="RN0-I6-esq" id="cc5-SU-6vh"/>
+                                                </connections>
+                                            </collectionViewCell>
+                                        </cells>
+                                        <connections>
+                                            <outlet property="dataSource" destination="ObA-dk-sSI" id="VqS-KF-tQ3"/>
+                                            <outlet property="delegate" destination="ObA-dk-sSI" id="6E1-BB-8Vi"/>
+                                        </connections>
+                                    </collectionView>
+                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DrawerHandle" translatesAutoresizingMaskIntoConstraints="NO" id="WBV-Bj-jok">
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="rS0-d0-ReT" appends="YES" id="Zf6-ZN-mSd"/>
+                                        </connections>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="WBV-Bj-jok" secondAttribute="trailing" id="9Rp-Pj-UuE"/>
+                                    <constraint firstItem="WBV-Bj-jok" firstAttribute="top" secondItem="cEU-OF-YTs" secondAttribute="top" id="BSp-qn-KD6"/>
+                                    <constraint firstItem="kcH-AV-vY8" firstAttribute="top" secondItem="WBV-Bj-jok" secondAttribute="bottom" id="GFX-bW-oQx"/>
+                                    <constraint firstAttribute="bottom" secondItem="kcH-AV-vY8" secondAttribute="bottom" id="HxG-Kg-MuH"/>
+                                    <constraint firstItem="kcH-AV-vY8" firstAttribute="leading" secondItem="cEU-OF-YTs" secondAttribute="leading" id="LbD-fj-dXF"/>
+                                    <constraint firstAttribute="trailing" secondItem="kcH-AV-vY8" secondAttribute="trailing" id="iJE-uR-323"/>
+                                    <constraint firstItem="kcH-AV-vY8" firstAttribute="top" secondItem="cEU-OF-YTs" secondAttribute="top" constant="40" id="s6j-QX-ZTd"/>
+                                    <constraint firstItem="WBV-Bj-jok" firstAttribute="leading" secondItem="cEU-OF-YTs" secondAttribute="leading" id="zwf-Dc-WDY"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iTd-9M-XPb">
+                                <state key="normal" title="stop"/>
+                                <connections>
+                                    <action selector="stopRecording" destination="ObA-dk-sSI" eventType="touchUpInside" id="xO1-tO-eNh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.56454642398480748" blue="0.39421777499759536" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="n38-gi-rB5" firstAttribute="top" secondItem="cEU-OF-YTs" secondAttribute="bottom" id="7mQ-zd-vRc"/>
+                            <constraint firstItem="nAh-yW-WFx" firstAttribute="baseline" secondItem="iTd-9M-XPb" secondAttribute="baseline" id="8QG-G6-nRK"/>
+                            <constraint firstAttribute="trailing" secondItem="4sM-Gs-3XI" secondAttribute="trailing" id="F3z-Ne-pRJ"/>
+                            <constraint firstItem="cEU-OF-YTs" firstAttribute="leading" secondItem="zMn-AG-sqS" secondAttribute="leading" id="RRN-9L-4Iq"/>
+                            <constraint firstItem="4sM-Gs-3XI" firstAttribute="leading" secondItem="zMn-AG-sqS" secondAttribute="leading" id="Upm-dE-R2H"/>
+                            <constraint firstItem="nAh-yW-WFx" firstAttribute="top" secondItem="qkL-Od-lgU" secondAttribute="bottom" id="Vh9-3l-13I"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="iTd-9M-XPb" secondAttribute="trailing" constant="60" id="obN-kv-yp1"/>
+                            <constraint firstItem="nAh-yW-WFx" firstAttribute="leading" secondItem="zMn-AG-sqS" secondAttribute="leadingMargin" constant="44" id="uS6-7w-ZxA"/>
+                            <constraint firstItem="n38-gi-rB5" firstAttribute="top" secondItem="4sM-Gs-3XI" secondAttribute="bottom" id="ygy-oJ-EmW"/>
+                            <constraint firstAttribute="trailing" secondItem="cEU-OF-YTs" secondAttribute="trailing" id="zTd-kt-cGD"/>
+                            <constraint firstItem="4sM-Gs-3XI" firstAttribute="top" secondItem="qkL-Od-lgU" secondAttribute="bottom" constant="44" id="zuh-o9-RA5"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="528"/>
+                    <connections>
+                        <outlet property="animatorView" destination="4sM-Gs-3XI" id="Wu4-0z-hDa"/>
+                        <outlet property="characterDrawer" destination="kcH-AV-vY8" id="YRV-ax-LOd"/>
+                        <outlet property="drawerView" destination="cEU-OF-YTs" id="0L2-rV-HhR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X47-rx-isc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="rS0-d0-ReT">
+                    <connections>
+                        <action selector="toggleOpen" destination="ObA-dk-sSI" id="5UP-m1-WLK"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="116.8" y="123.23838080959521"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="DrawerHandle" width="320" height="40"/>
+    </resources>
+</document>

@@ -8,12 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		8B2F7D431D13A97400E63704 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2F7D421D13A97400E63704 /* AppDelegate.swift */; };
-		8B2F7D451D13A97400E63704 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2F7D441D13A97400E63704 /* ViewController.swift */; };
-		8B2F7D481D13A97400E63704 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B2F7D461D13A97400E63704 /* Main.storyboard */; };
 		8B2F7D4A1D13A97400E63704 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B2F7D491D13A97400E63704 /* Assets.xcassets */; };
 		8B2F7D4D1D13A97400E63704 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B2F7D4B1D13A97400E63704 /* LaunchScreen.storyboard */; };
 		8B2F7D581D13A97400E63704 /* AskieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2F7D571D13A97400E63704 /* AskieTests.swift */; };
 		8B2F7D631D13A97400E63704 /* AskieUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2F7D621D13A97400E63704 /* AskieUITests.swift */; };
+		8B2F7D741D13A99F00E63704 /* AnimatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2F7D701D13A99F00E63704 /* AnimatorView.swift */; };
+		8B2F7D751D13A99F00E63704 /* EmojiCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2F7D711D13A99F00E63704 /* EmojiCollectionViewCell.swift */; };
+		8B2F7D761D13A99F00E63704 /* EmojiLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2F7D721D13A99F00E63704 /* EmojiLabel.swift */; };
+		8B2F7D771D13A99F00E63704 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2F7D731D13A99F00E63704 /* MessagesViewController.swift */; };
+		8B6C88F41D13AA9F00416C42 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B6C88F21D13AA9F00416C42 /* MainInterface.storyboard */; };
+		8B6C88F61D13AC4300416C42 /* DrawerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6C88F51D13AC4300416C42 /* DrawerView.swift */; };
+		8BCF50EC1D13C1490034E7DD /* drawerHandle_pdf.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 8BCF50EB1D13C1490034E7DD /* drawerHandle_pdf.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,8 +41,6 @@
 /* Begin PBXFileReference section */
 		8B2F7D3F1D13A97400E63704 /* Askie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Askie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B2F7D421D13A97400E63704 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8B2F7D441D13A97400E63704 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8B2F7D471D13A97400E63704 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8B2F7D491D13A97400E63704 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B2F7D4C1D13A97400E63704 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8B2F7D4E1D13A97400E63704 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +50,13 @@
 		8B2F7D5E1D13A97400E63704 /* AskieUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AskieUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B2F7D621D13A97400E63704 /* AskieUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskieUITests.swift; sourceTree = "<group>"; };
 		8B2F7D641D13A97400E63704 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B2F7D701D13A99F00E63704 /* AnimatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatorView.swift; sourceTree = "<group>"; };
+		8B2F7D711D13A99F00E63704 /* EmojiCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojiCollectionViewCell.swift; sourceTree = "<group>"; };
+		8B2F7D721D13A99F00E63704 /* EmojiLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojiLabel.swift; sourceTree = "<group>"; };
+		8B2F7D731D13A99F00E63704 /* MessagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
+		8B6C88F31D13AA9F00416C42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		8B6C88F51D13AC4300416C42 /* DrawerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawerView.swift; sourceTree = "<group>"; };
+		8BCF50EB1D13C1490034E7DD /* drawerHandle_pdf.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = drawerHandle_pdf.pdf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,9 +108,14 @@
 			isa = PBXGroup;
 			children = (
 				8B2F7D421D13A97400E63704 /* AppDelegate.swift */,
-				8B2F7D441D13A97400E63704 /* ViewController.swift */,
-				8B2F7D461D13A97400E63704 /* Main.storyboard */,
+				8B2F7D701D13A99F00E63704 /* AnimatorView.swift */,
+				8B6C88F51D13AC4300416C42 /* DrawerView.swift */,
+				8B2F7D711D13A99F00E63704 /* EmojiCollectionViewCell.swift */,
+				8B2F7D721D13A99F00E63704 /* EmojiLabel.swift */,
+				8B2F7D731D13A99F00E63704 /* MessagesViewController.swift */,
 				8B2F7D491D13A97400E63704 /* Assets.xcassets */,
+				8BCF50EB1D13C1490034E7DD /* drawerHandle_pdf.pdf */,
+				8B6C88F21D13AA9F00416C42 /* MainInterface.storyboard */,
 				8B2F7D4B1D13A97400E63704 /* LaunchScreen.storyboard */,
 				8B2F7D4E1D13A97400E63704 /* Info.plist */,
 			);
@@ -193,13 +208,21 @@
 				TargetAttributes = {
 					8B2F7D3E1D13A97400E63704 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 349WFX4WJR;
+						DevelopmentTeamName = "Jonah Witcig";
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
 					};
 					8B2F7D521D13A97400E63704 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
 						TestTargetID = 8B2F7D3E1D13A97400E63704;
 					};
 					8B2F7D5D1D13A97400E63704 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
 						TestTargetID = 8B2F7D3E1D13A97400E63704;
 					};
 				};
@@ -230,8 +253,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B2F7D4D1D13A97400E63704 /* LaunchScreen.storyboard in Resources */,
+				8B6C88F41D13AA9F00416C42 /* MainInterface.storyboard in Resources */,
+				8BCF50EC1D13C1490034E7DD /* drawerHandle_pdf.pdf in Resources */,
 				8B2F7D4A1D13A97400E63704 /* Assets.xcassets in Resources */,
-				8B2F7D481D13A97400E63704 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,8 +280,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B2F7D451D13A97400E63704 /* ViewController.swift in Sources */,
+				8B2F7D771D13A99F00E63704 /* MessagesViewController.swift in Sources */,
 				8B2F7D431D13A97400E63704 /* AppDelegate.swift in Sources */,
+				8B2F7D751D13A99F00E63704 /* EmojiCollectionViewCell.swift in Sources */,
+				8B6C88F61D13AC4300416C42 /* DrawerView.swift in Sources */,
+				8B2F7D741D13A99F00E63704 /* AnimatorView.swift in Sources */,
+				8B2F7D761D13A99F00E63704 /* EmojiLabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,20 +321,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		8B2F7D461D13A97400E63704 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8B2F7D471D13A97400E63704 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		8B2F7D4B1D13A97400E63704 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				8B2F7D4C1D13A97400E63704 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		8B6C88F21D13AA9F00416C42 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8B6C88F31D13AA9F00416C42 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -401,10 +429,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Askie/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jwitapps.Askie;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -412,10 +442,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Askie/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jwitapps.Askie;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -423,10 +455,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = AskieTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jwitapps.AskieTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Askie.app/Askie";
 			};
 			name = Debug;
@@ -435,10 +469,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = AskieTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jwitapps.AskieTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Askie.app/Askie";
 			};
 			name = Release;
@@ -446,10 +482,12 @@
 		8B2F7D6E1D13A97400E63704 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = AskieUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jwitapps.AskieUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = Askie;
 			};
 			name = Debug;
@@ -457,10 +495,12 @@
 		8B2F7D6F1D13A97400E63704 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = AskieUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jwitapps.AskieUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = Askie;
 			};
 			name = Release;
@@ -484,6 +524,7 @@
 				8B2F7D691D13A97400E63704 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8B2F7D6A1D13A97400E63704 /* Build configuration list for PBXNativeTarget "AskieTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +533,7 @@
 				8B2F7D6C1D13A97400E63704 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8B2F7D6D1D13A97400E63704 /* Build configuration list for PBXNativeTarget "AskieUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +542,7 @@
 				8B2F7D6F1D13A97400E63704 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
